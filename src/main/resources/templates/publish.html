@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>suibianwanwan</title>
+    <title>发布</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -17,7 +17,7 @@
                     data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">che's community</span>
             </button>
-            <a class="navbar-brand" href="#">che's community</a>
+            <a class="navbar-brand" href="/">che's community</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -66,8 +66,21 @@
                     <label for="title">添加标签:</label>
                     <input type="text" class="form-control" id="tag" name="tag" placeholder="输入标签,以逗号(,)分隔">
                 </div>
-                <span class="alert alert-danger" th:text="#{error}"></span>
-                <button type="submit" class="btn btn-success btn-publish">发布</button>
+                <div class="container-fluid main ">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                            <div class="alert alert-danger col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                 th:text="${error}"
+                                 th:if="${error != null}">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                            <button type="submit" class="btn btn-success btn-publish ">
+                                发布
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">

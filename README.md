@@ -1,13 +1,15 @@
 ##suibianwanwna -che
 
 ##资料
-[spring 文档](https://spring.io/guides)
-[github OAuth](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/)
+[spring文档](https://spring.io/guides)
+[githubOAuth](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/)
 [okhttp](https://square.github.io/okhttp/)
-[spring docs](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#using-boot-devtools)
+[springdocs](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#using-boot-devtools)
+[thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#setting-attribute-values)
 
 ##工具
 git
+lombok
 
 ##脚本
 ```sql
@@ -37,3 +39,4 @@ create table question
     tag varchar(256)
 );
 
+alter table USER add avatar_url varchar(100) null;
